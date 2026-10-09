@@ -64,7 +64,7 @@
     box.setAttribute('aria-label', 'Настройки cookie');
     box.innerHTML =
       '<p class="cookie-text">Мы используем cookie, чтобы сайт работал корректно, и — с вашего согласия — ' +
-      'Яндекс Метрику, чтобы понимать, какие разделы полезны. <a href="politika-cookie.html">Подробнее</a></p>' +
+      'Яндекс Метрику, чтобы понимать, какие разделы полезны. <a href="https://leto.travel365.by/politika-cookie.html" target="_blank" rel="noopener">Подробнее</a></p>' +
       '<div class="cookie-settings" hidden>' +
       '  <label class="cookie-opt"><input type="checkbox" checked disabled> <span><b>Технические</b> — нужны для работы сайта, отключить нельзя</span></label>' +
       '  <label class="cookie-opt"><input type="checkbox" id="cookie-analytics"> <span><b>Аналитические</b> — Яндекс Метрика: статистика посещений</span></label>' +

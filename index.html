@@ -3,356 +3,472 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Восточное Средиземноморье — круиз MSC из Стамбула · 1–9 декабря 2026</title>
-<meta name="description" content="Круиз «Восточное Средиземноморье»: Стамбул, Корфу, Бари, Афины и Измир на лайнере MSC, «всё включено». Перелёт из Минска, отель, трансферы, чаевые и сборы — в цене. 1–9 декабря 2026, от 1 290 €.">
-<meta property="og:title" content="Восточное Средиземноморье — круиз из Стамбула">
+<title>Восточное Средиземноморье — круиз из Стамбула · 1–9 декабря 2026</title>
+<meta name="description" content="Три страны Европы за 9 дней: Турция, Греция, Италия. Круиз на MSC Orchestra «всё включено» из Стамбула, перелёт из Минска, отель, трансферы, чаевые и сборы — в цене. От 1 290 €. Греческая виза бесплатно для первых 10 человек.">
+<meta property="og:title" content="Восточное Средиземноморье — Турция, Греция, Италия за один круиз">
 <meta property="og:description" content="1–9 декабря 2026. Перелёт из Минска, отель в Стамбуле, 7 ночей на лайнере MSC «всё включено», без скрытых доплат. От 1 290 €.">
-<meta property="og:image" content="images/corfu-fortress.jpg">
+<meta property="og:image" content="images/corfu-town.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202610081900">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Manrope:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=202610091">
 <script>document.documentElement.className += " js";</script>
-<script src="motion.js?v=202610022140" defer></script>
 <script src="consent.js?v=202609270038"></script>
 </head>
 <body>
 
-<!-- Значки (один раз, дальше через <use>) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 21 4l-5 16-4-7-9-1Z"/><path d="m12 13 9-9"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 21v-4M16 21v-4M8 14h.01M16 14h.01"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6M3 14h18v4M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="2"/></symbol>
     <symbol id="i-ship" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h18l-2.5 4.5h-13Z"/><path d="M6 15V10h12v5"/><path d="M9 10V6h6v4"/></symbol>
-    <symbol id="i-road" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v3M12 18v2"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9Z"/></symbol>
-    <symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.5-3.5 3-5.5 6-5.5s5.5 2 6 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.6c2.4.3 4 2 4.5 5"/></symbol>
-    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9.5c.6-1 1.6-1.5 3-1.5 1.8 0 3 .8 3 2s-1.2 1.6-3 2-3 .8-3 2 1.2 2 3 2c1.4 0 2.4-.5 3-1.5M12 6v2M12 16v2"/></symbol>
   </defs>
 </svg>
 
-<header class="topbar">
+<header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="index.html">НеобхоДима <span>Тревел</span></a>
-    <a class="top-phone" href="tel:+375447884422">+375 (44) 788-44-22</a>
-    <a class="btn" href="#zayavka">Оставить заявку</a>
-  </div>
-  <nav class="tabs" aria-label="Разделы">
-    <div class="wrap">
-      <a href="#top" aria-current="page">Главная</a>
-      <a href="#stoimost">Цена</a>
+    <a class="brand" href="#hero">НеобхоДима <span>Тревел</span></a>
+    <nav class="nav" aria-label="Разделы">
       <a href="#marshrut">Маршрут</a>
+      <a href="#vklyucheno">Что входит</a>
       <a href="#layner">Лайнер</a>
       <a href="#viza">Виза</a>
       <a href="#voprosy">Вопросы</a>
-      <a href="#zayavka">Заявка</a>
-    </div>
-  </nav>
+    </nav>
+    <a class="top-phone" href="tel:+375447884422">+375 (44) 788-44-22</a>
+    <a class="btn small" href="#zayavka">Оставить заявку</a>
+  </div>
 </header>
 
-<main id="top">
+<main>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-split hero-three">
-    <div class="ph hero-half winter">
-      <img src="images/istanbul-tram.jpg" alt="Красный ретро-трамвай на улице Истикляль в Стамбуле" style="object-position: center 40%;">
-      <div class="hero-temp"><span>Старт</span><b>Стамбул</b></div>
-    </div>
-    <div class="ph hero-half ship">
-      <img src="images/corfu-fortress.jpg" alt="Старая крепость на острове Корфу" style="object-position: 40% center;">
-      <div class="hero-temp"><span>7 ночей</span><b>на лайнере</b><small>«всё включено»</small></div>
-    </div>
-    <div class="ph hero-half summer">
-      <img src="images/athens-caryatids.jpg" alt="Портик кариатид Эрехтейона на Акрополе в Афинах" style="object-position: center 30%;">
-      <div class="hero-temp"><span>Заход</span><b>Афины</b></div>
-    </div>
-    <div class="hero-arrow a1" aria-hidden="true">→</div>
-    <div class="hero-arrow a2" aria-hidden="true">→</div>
-    <div class="hero-badge">НеобхоДима Тревел · групповой круиз</div>
+<!-- ============ ГЕРОЙ ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="images/ist-mosque-people.jpg" alt="">
+    <img src="images/corfu-town.jpg" alt="" loading="lazy">
+    <img src="images/athens-erechtheion.jpg" alt="" loading="lazy">
+    <img src="images/ship-sea.jpg" alt="" loading="lazy">
   </div>
-  <div class="wrap hero-body">
-    <p class="eyebrow">Турция · Греция · Италия</p>
+  <div class="wrap">
+    <span class="dates">1–9 декабря 2026 · вылет из Минска</span>
     <h1>Восточное <em>Средиземноморье</em></h1>
-    <p class="hero-sub">Стамбул, Корфу, Бари, Афины и Измир за одну поездку — на лайнере MSC, с перелётом из Минска. 1–9 декабря 2026. Всё уже включено: ни скрытых доплат, ни сюрпризов на борту.</p>
-    <div class="hero-actions">
-      <a class="btn" href="#zayavka">Оставить заявку</a>
-      <a class="btn btn-ghost" href="#stoimost">Что входит · от 1 290 €</a>
+    <p class="sub">Стамбул, Корфу, Бари, Афины и Измир за одну поездку. Три страны Европы на лайнере MSC Orchestra: утром — новый порт, вечером — снова ваша каюта. Всё включено, без скрытых доплат.</p>
+    <div class="countries">
+      <span class="chip"><i class="f-tr"></i>Турция</span>
+      <span class="chip"><i class="f-gr"></i>Греция</span>
+      <span class="chip"><i class="f-it"></i>Италия</span>
     </div>
-    <div class="stats">
-      <div class="stat"><b>9</b><span>дней: 1–9 декабря</span></div>
-      <div class="stat"><b>7</b><span>ночей на лайнере «всё включено»</span></div>
-      <div class="stat"><b>3</b><span>страны: Турция, Греция, Италия</span></div>
-      <div class="stat"><b>0</b><span>скрытых доплат: чаевые и сборы в цене</span></div>
+    <div class="hero-cta">
+      <a class="btn" href="#zayavka">Забронировать место</a>
+      <a class="btn ghost" href="#marshrut">Смотреть маршрут</a>
+      <span class="hero-price">от<b>1 290 €</b>за человека</span>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>9 дней</b><span>1–9 декабря, перелёт из Минска</span></div>
+      <div class="fact"><b>7 ночей</b><span>на лайнере «всё включено»</span></div>
+      <div class="fact"><b>6 городов</b><span>в 3 странах — без смены отелей</span></div>
+      <div class="fact"><b>0 € доплат</b><span>чаевые и сборы уже в цене</span></div>
     </div>
   </div>
 </section>
 
-<!-- ================= ЦЕНА И АКЦИЯ ================= -->
-<section id="stoimost">
+<!-- ============ ТРИ СТРАНЫ ============ -->
+<section id="strany">
   <div class="wrap">
-    <p class="eyebrow">Стартовая цена — от 1 290 €</p>
+    <span class="eyebrow">Европа из Минска</span>
+    <h2>Одна поездка — три страны</h2>
+    <p class="lead">Византийский Стамбул, ионические острова и афинский Акрополь, барочная Апулия: античная история, средиземноморские улочки и море — в одном круизе.</p>
+    <div class="trio">
+      <article class="country rv"><img src="images/ist-hagia.jpg" alt="Собор Святой Софии в Стамбуле" loading="lazy" style="object-position:center 60%"><div><span class="chip"><i class="f-tr"></i>Турция</span><h3>Стамбул и Измир</h3><p>Айя-София, Голубая мечеть, Босфор. Эгейский Измир — и древний Эфес рядом.</p></div></article>
+      <article class="country rv"><img src="images/athens-caryatids.jpg" alt="Кариатиды Эрехтейона на Акрополе в Афинах" loading="lazy" style="object-position:center 30%"><div><span class="chip"><i class="f-gr"></i>Греция</span><h3>Корфу и Афины</h3><p>Венецианский старый город и крепости Корфу, Акрополь, Парфенон и Плака.</p></div></article>
+      <article class="country rv"><img src="images/alber-1.jpg" alt="Дома-трулли в Альберобелло с цветами" loading="lazy" style="object-position:center 40%"><div><span class="chip"><i class="f-it"></i>Италия</span><h3>Бари и Альберобелло</h3><p>Каменные переулки Апулии, базилика Святого Николая и сказочные трулли.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЧТО ВХОДИТ ============ -->
+<section class="incl" id="vklyucheno">
+  <div class="wrap">
+    <span class="eyebrow">Всё в одной цене</span>
     <h2>Что входит в стоимость</h2>
-    <p class="lead">Всё, что нужно для поездки, — в одной цене</p>
-    <p class="price-note"><b class="sale-note">Цена растёт по мере заполнения групп</b> — чем раньше бронь, тем выгоднее. Указана за одного человека при двухместном размещении.</p>
-
-    <div class="offer">
-      <div class="offer-box">
+    <p class="lead">Вы оплачиваете поездку один раз. На борту не нужно доплачивать за чаевые и сборы.</p>
+    <div class="incl-grid">
+      <div class="list rv">
         <h3>Включено</h3>
-        <ul class="checks">
-          <li>Авиаперелёт Минск — Стамбул и Стамбул — Минск</li>
-          <li>Трансфер из аэропорта в отель в Стамбуле</li>
-          <li>Отель 4–5★ в Стамбуле по системе «Фортуна», с завтраком</li>
-          <li>Трансфер из отеля в порт и из порта в отель</li>
-          <li>Круиз 8 дней / 7 ночей на лайнере MSC по системе «всё включено»</li>
-          <li>Портовые сборы и чаевые на лайнере — <b>без скрытых доплат</b></li>
+        <ul>
+          <li><svg><use href="#i-plane"/></svg><div><b>Авиаперелёт Минск — Стамбул — Минск</b><span>Туда и обратно, сразу к порту отправления</span></div></li>
+          <li><svg><use href="#i-bus"/></svg><div><b>Трансферы в Стамбуле</b><span>Аэропорт — отель, отель — порт и порт — отель</span></div></li>
+          <li><svg><use href="#i-bed"/></svg><div><b>Отель 4–5★ в Стамбуле с завтраком</b><span>По системе «Фортуна»: заселим в один из отелей этой категории</span></div></li>
+          <li><svg><use href="#i-ship"/></svg><div><b>Круиз 8 дней / 7 ночей на MSC Orchestra</b><span>Система «всё включено»: питание, развлечения, бассейны</span></div></li>
+          <li><svg><use href="#i-coin"/></svg><div><b>Портовые сборы и чаевые</b><span>Без скрытых доплат — всё уже оплачено</span></div></li>
         </ul>
-        <h3 style="margin-top:26px">Не включено</h3>
-        <ul class="checks no">
-          <li>Туристическая услуга — 350&nbsp;BYN</li>
+        <div class="not"><b>Не включено:</b> туристическая услуга — 350&nbsp;BYN; экскурсии по желанию; консульский сбор за визу.</div>
+      </div>
+      <aside class="price-card rv">
+        <span class="tag">Стартовая цена</span>
+        <div class="big"><small>от</small>1 290<small>€</small></div>
+        <p>За человека при двухместном размещении, 1–9 декабря. Цена растёт по мере заполнения группы — чем раньше бронь, тем выгоднее.</p>
+        <a class="btn" href="#zayavka">Забронировать</a>
+        <ul>
+          <li>Греческая виза — бесплатно для первых 10 человек</li>
+          <li>Сопровождение команды «НеобхоДима Тревел»</li>
+          <li>Каюту классом выше подберут менеджеры</li>
         </ul>
-        <p class="fine">Система «Фортуна»: заселим в один из отелей 4–5★ в Стамбуле, какой именно — сообщим ближе к поездке. Программа ориентировочная: туроператор вправе вносить изменения без сокращения объёма и снижения качества услуг.</p>
-      </div>
-      <div class="offer-price">
-        <p style="margin:0">Стоимость</p>
-        <div class="big"><small>от</small> 1 290 <small>€</small></div>
-        <p>за человека, двухместное размещение · 1–9 декабря</p>
-        <a class="btn" href="#zayavka" data-plan="Восточное Средиземноморье">Забронировать</a>
-      </div>
-    </div>
-
-    <div class="visa-promo">
-      <span class="ico"><svg><use href="#i-doc"/></svg></span>
-      <div>
-        <h3>Греческая виза — бесплатно для первых 10 человек</h3>
-        <p>Мы — победители премии «Народный выбор» по визовой поддержке. Поэтому для первых 10 человек, забронировавших этот круиз, визовая поддержка (греческая виза) — в подарок.</p>
-      </div>
-      <a class="btn" href="#zayavka" data-plan="Восточное Средиземноморье">Занять место</a>
+      </aside>
     </div>
   </div>
 </section>
 
-<!-- ================= ЗАЧЕМ ================= -->
-<section style="background: var(--paper);">
+<!-- ============ ВИЗА (БИЛЕТ) ============ -->
+<section class="visa" id="viza">
   <div class="wrap">
-    <p class="eyebrow">Почему этот круиз</p>
-    <h2>Три страны — и ни одного переезда с чемоданом</h2>
-    <p class="intro">Лайнер каждое утро приходит в новый порт, а вечером вы возвращаетесь в ту же каюту. Зимой в восточном Средиземноморье нет жары — самое удобное время ходить по древним городам.</p>
-
-    <div class="strip-head">
-      <p class="subhead">Что нас ждёт</p>
-      <div class="strip-nav">
-        <button type="button" data-strip="-1" aria-label="Назад">←</button>
-        <button type="button" data-strip="1" aria-label="Вперёд">→</button>
+    <span class="eyebrow">Визовая поддержка</span>
+    <div class="ticket rv">
+      <div class="ticket-main">
+        <div class="ticket-top"><span class="award">★ Победитель премии «Народный выбор» — визовая поддержка</span></div>
+        <h2>Греческая виза — <em>бесплатно</em> для первых 10 человек</h2>
+        <p class="lead" style="font-size:17px">Круиз заходит в Грецию, поэтому нужна греческая виза. Мы возьмём оформление на себя — и не возьмём за это ни копейки.</p>
+        <ul>
+          <li>Консультация и проверка паспорта</li>
+          <li>Список документов под вашу ситуацию</li>
+          <li>Помощь с анкетой и бронью для консульства</li>
+          <li>Запись в визовый центр и сопровождение до решения</li>
+        </ul>
+      </div>
+      <div class="ticket-stub">
+        <small>Мест с бесплатной визой</small>
+        <div class="ten">10</div>
+        <small>первые брони</small>
+        <a class="btn" href="#zayavka">Занять место</a>
       </div>
     </div>
-    <div class="strip" id="strip">
-      <figure class="ph"><img src="images/istanbul-hagia-sophia.jpg" alt="Собор Святой Софии в Стамбуле" loading="lazy"><figcaption><span>Стамбул</span>Святая София</figcaption></figure>
-      <figure class="ph"><img src="images/istanbul-galata.jpg" alt="Галатская башня в Стамбуле" loading="lazy"><figcaption><span>Стамбул</span>Галатская башня</figcaption></figure>
-      <figure class="ph"><img src="images/corfu-fortress.jpg" alt="Старая крепость на острове Корфу" loading="lazy"><figcaption><span>Корфу</span>Старая крепость над морем</figcaption></figure>
-      <figure class="ph"><img src="images/bari-basilica.jpg" alt="Базилика Святого Николая в Бари" loading="lazy"><figcaption><span>Бари</span>Базилика Святого Николая</figcaption></figure>
-      <figure class="ph"><img src="images/athens-caryatids.jpg" alt="Кариатиды Эрехтейона на Акрополе" loading="lazy"><figcaption><span>Афины</span>Акрополь и кариатиды</figcaption></figure>
-      <figure class="ph"><img src="images/izmir-kordon.jpg" alt="Набережная Кордон в Измире" loading="lazy"><figcaption><span>Измир</span>Набережная Кордон</figcaption></figure>
-      <figure class="ph"><img src="images/cruise-sunset.jpg" alt="Закат над морем с палубы лайнера" loading="lazy"><figcaption><span>Круиз</span>Закат с палубы</figcaption></figure>
-      <figure class="ph"><img src="images/msc-pools.jpg" alt="Палуба лайнера MSC с бассейнами" loading="lazy"><figcaption><span>На борту</span>Бассейны и палубы</figcaption></figure>
-    </div>
-
-    <div class="cards">
-      <div class="card"><span class="ico"><svg><use href="#i-plane"/></svg></span><div><h4>Перелёт из Минска</h4><p>Прямой рейс до Стамбула, порт отправления — там же. Без пересадок и стыковок</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><h4>Много разных экскурсий</h4><p>В каждом порту — на любой вкус: от старых крепостей и соборов до Акрополя. Выбираете сами</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-ship"/></svg></span><div><h4>7 ночей «всё включено»</h4><p>Рестораны, шоу, бассейны и спа на борту. Чаевые и сборы уже оплачены</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-star"/></svg></span><div><h4>Отель 4–5★ в Стамбуле</h4><p>Ночь до круиза с завтраком и трансферами: отдохнуть с дороги и без спешки выйти в порт</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-road"/></svg></span><div><h4>Комфортная погода</h4><p>Зимой нет летней жары — достопримечательности удобно осматривать пешком</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-people"/></svg></span><div><h4>Русскоязычный сервис</h4><p>Русскоязычная служба на борту и поддержка нашей команды до и после поездки</p></div></div>
-    </div>
+    <p class="ticket-note">Консульский сбор оплачивается отдельно. Бесплатная визовая поддержка действует для первых 10 человек, оформивших бронь на этот круиз.</p>
   </div>
 </section>
 
-<!-- ================= МАРШРУТ ================= -->
+<!-- ============ МАРШРУТ ============ -->
 <section id="marshrut">
   <div class="wrap">
-    <p class="eyebrow">9 дней · 8 ночей</p>
+    <span class="eyebrow">9 дней · 6 городов · 3 страны</span>
     <h2>Маршрут по дням</h2>
     <p class="lead">Минск → Стамбул → Корфу → Бари → Афины → Измир → Стамбул → Минск</p>
 
-    <div class="route-line">
-      <div class="stop"><i><svg><use href="#i-plane"/></svg></i>Минск</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Стамбул</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Корфу</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Бари</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Афины</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Измир</div>
-      <div class="stop"><i><svg><use href="#i-plane"/></svg></i>Минск</div>
-    </div>
-
-    <div class="days-tools"><button type="button" id="daysToggle">Развернуть все дни</button></div>
     <div class="days">
-      <details class="day" open><summary><span class="day-date">1 декабря<small>вторник</small></span><span class="day-title">Вылет в Стамбул</span></summary><div class="day-text"><p class="day-short">Перелёт Минск — Стамбул, трансфер и заселение в отель 4–5★.</p><p>Перелёт Минск — Стамбул, трансфер из аэропорта в отель с завтраком. Вечер свободный: можно выйти к набережной или просто отдохнуть перед круизом.</p></div></details>
-      <details class="day"><summary><span class="day-date">2 декабря<small>среда</small></span><span class="day-title">Стамбул · посадка на лайнер</span></summary><div class="day-text"><p class="day-short">Трансфер из отеля в порт и посадка на лайнер MSC.</p><p>После завтрака — трансфер в порт, посадка на лайнер, заселение в каюту. Первый ужин и отправление.</p></div></details>
-      <details class="day"><summary><span class="day-date">3 декабря<small>четверг</small></span><span class="day-title">День в море</span></summary><div class="day-text"><p class="day-short">Бассейны, спа, рестораны и шоу — «всё включено».</p><p>Беззаботный день на борту: бассейны, спа, рестораны, вечерние шоу.</p></div></details>
-      <details class="day"><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Остров Корфу, Греция</span></summary><div class="day-text"><p class="day-short">Старая крепость и старый город Керкиры.</p><p>Первая остановка в Греции — остров Корфу: старая крепость над морем и узкие улочки старого города.</p></div></details>
-      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Бари, Италия</span></summary><div class="day-text"><p class="day-short">Старый город и базилика Святого Николая.</p><p>Порт Бари в итальянской Апулии: старый город и базилика Святого Николая.</p></div></details>
-      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Пирей — Афины, Греция</span></summary><div class="day-text"><p class="day-short">Афины и Акрополь.</p><p>Порт Пирей — ворота в Афины: Акрополь, Эрехтейон с кариатидами, смена караула у Парламента.</p></div></details>
-      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">День в море</span></summary><div class="day-text"><p class="day-short">Отдых на борту.</p><p>Ещё один день на борту — время для спа, бассейна или вечернего шоу.</p></div></details>
-      <details class="day"><summary><span class="day-date">8 декабря<small>вторник</small></span><span class="day-title">Измир, Турция</span></summary><div class="day-text"><p class="day-short">Набережная Кордон и окрестности Измира.</p><p>Турецкий Измир на берегу Эгейского моря — набережная Кордон, рынки и старый город. Возможны экскурсии к античным местам рядом.</p></div></details>
-      <details class="day"><summary><span class="day-date">9 декабря<small>среда</small></span><span class="day-title">Стамбул · вылет домой</span></summary><div class="day-text"><p class="day-short">Высадка, трансфер в отель и перелёт в Минск.</p><p>Возвращение в Стамбул, высадка, трансфер из порта в отель и перелёт в Минск.</p></div></details>
+
+      <div class="day rv">
+        <div class="dd"><b>1</b><span>дек · вт</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/ist-sunset.jpg" alt="Закат над Стамбулом" loading="lazy" style="object-position:center 55%"><span class="pill flag"><i class="f-tr"></i>Турция</span></div>
+          <div class="txt">
+            <div class="place">Стамбул</div>
+            <h3>Вылет и первый вечер на Босфоре</h3>
+            <p>Перелёт Минск — Стамбул, встреча и трансфер в отель 4–5★ с завтраком. Стамбул стоит на стыке Европы и Азии: византийское наследие здесь соседствует с османскими дворцами, мечетями и восточными базарами.</p>
+            <div class="opt"><b>★ По желанию</b><p>Приватный ужин на Босфоре — вечер с видом на огни города. Стоимость и время подскажет менеджер.</p></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>2</b><span>дек · ср</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/ist-tram.jpg" alt="Красный ретро-трамвай на улице Истикляль" loading="lazy" style="object-position:center 55%"><span class="pill flag"><i class="f-tr"></i>Турция</span></div>
+          <div class="txt">
+            <div class="place">Стамбул · посадка на лайнер</div>
+            <h3>Султанахмет и отплытие</h3>
+            <p>В историческом районе Султанахмет — Айя-София, Голубая мечеть и площадь древнего Ипподрома. Затем трансфер в порт, заселение в каюту на MSC Orchestra и первый ужин на борту.</p>
+            <div class="opt"><b>★ По желанию: утренняя экскурсия по Стамбулу</b>
+              <p>Султанахмет, Голубая мечеть, Ипподром, внешний осмотр Айя-Софии, при наличии времени — Гранд-базар.</p>
+              <details><summary>Пример программы</summary><table>
+                <tr><td>08:00–08:30</td><td>Выезд из отеля, обзорная экскурсия</td></tr>
+                <tr><td>до 12:30–13:00</td><td>Прямой трансфер в круизный терминал и посадка</td></tr>
+              </table></details></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day sea-day rv">
+        <div class="dd"><b>3</b><span>дек · чт</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/pool-1.jpg" alt="Бассейн на палубе MSC Orchestra" loading="lazy"></div>
+          <div class="txt">
+            <div class="place">День в море</div>
+            <h3>Целый день на борту</h3>
+            <p>Бассейны и джакузи, спа MSC Aurea, спортзал, рестораны и бары, вечернее шоу в театре. Всё включено — можно просто отдыхать.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>4</b><span>дек · пт</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/corfu-town.jpg" alt="Старый город Корфу и Ионическое море" loading="lazy"><span class="pill flag"><i class="f-gr"></i>Греция</span></div>
+          <div class="txt">
+            <div class="place">Остров Корфу</div>
+            <h3>Пастельные фасады и венецианские крепости</h3>
+            <p>Зелёный Ионический остров, где переплелись греческие, венецианские, французские и британские влияния. Старый город Корфу — объект Всемирного наследия ЮНЕСКО: узкие улочки, аркады, площади и старинные крепости. В районе Канони открывается панорама острова Понтикониси — «Мышиного острова».</p>
+            <div class="opt"><b>★ По желанию: Керкира и Канони</b>
+              <p>Пешая прогулка по старому городу, монастырь Влахерна, панорамы и фотостопы.</p>
+              <details><summary>Пример программы</summary><table>
+                <tr><td>12:00–12:30</td><td>Выход с лайнера</td></tr>
+                <tr><td>12:30–14:00</td><td>Прогулка по Керкире: Спианада, Листон, церковь Святого Спиридона</td></tr>
+                <tr><td>14:00–16:00</td><td>Канони, монастырь Влахерна, фотостопы</td></tr>
+                <tr><td>16:00–17:00</td><td>Свободное время в старом городе</td></tr>
+                <tr><td>17:30–18:00</td><td>Возвращение в порт</td></tr>
+              </table></details></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>5</b><span>дек · сб</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/alber-1.jpg" alt="Дома-трулли в Альберобелло" loading="lazy" style="object-position:center 40%"><span class="pill flag"><i class="f-it"></i>Италия</span></div>
+          <div class="txt">
+            <div class="place">Бари · Альберобелло</div>
+            <h3>Каменные переулки и дома-трулли</h3>
+            <p>Бари — портовая столица Апулии. В квартале Бари-Веккья сохранилась атмосфера старого средиземноморского города: каменные переулки, балконы, семейные пекарни. Главный памятник — базилика Святого Николая, важное место паломничества.</p>
+            <p>Недалеко — Альберобелло: белые дома-трулли с коническими крышами, объект ЮНЕСКО, сказочный пейзаж, не похожий на другие места Италии.</p>
+            <div class="opt"><b>★ По желанию: Бари + Альберобелло</b>
+              <p>Самая выразительная экскурсия круиза: старый город Бари и кварталы трулли.</p>
+              <details><summary>Пример программы</summary><table>
+                <tr><td>07:00–09:00</td><td>Выход с лайнера, набережная и старый город Бари</td></tr>
+                <tr><td>09:00–12:30</td><td>Переезд в Альберобелло, кварталы трулли</td></tr>
+                <tr><td>12:30–13:15</td><td>Обед за свой счёт</td></tr>
+                <tr><td>14:30–16:00</td><td>Бари: базилика Святого Николая, свободное время</td></tr>
+                <tr><td>16:00–16:30</td><td>Возвращение в порт</td></tr>
+              </table></details></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day sea-day rv">
+        <div class="dd"><b>6</b><span>дек · вс</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/deck-sunset.jpg" alt="Закат над морем с палубы лайнера" loading="lazy"></div>
+          <div class="txt">
+            <div class="place">День в море</div>
+            <h3>Закат с палубы</h3>
+            <p>Ещё один день на борту: спа, бассейн, мини-гольф или бар у воды. Вечером — шоу и музыка, а на палубе — закат над Средиземным морем.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>7</b><span>дек · пн</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/athens-caryatids.jpg" alt="Кариатиды Эрехтейона на Акрополе" loading="lazy" style="object-position:center 28%"><span class="pill flag"><i class="f-gr"></i>Греция</span></div>
+          <div class="txt">
+            <div class="place">Пирей · Афины</div>
+            <h3>Акрополь и улочки Плаки</h3>
+            <p>Афины — город, с которого начиналась европейская цивилизация: демократия, философия, театр. Над ним возвышается Акрополь с Парфеноном, храмом богини Афины. У подножия холма — Плака с узкими улочками, магазинчиками и тавернами.</p>
+            <div class="opt"><b>★ По желанию: обзорные Афины + Акрополь</b>
+              <p>С русскоговорящим лицензированным гидом. Стоимость и входные билеты уточняйте у менеджера.</p>
+              <details><summary>Пример программы</summary><table>
+                <tr><td>07:00–08:30</td><td>Сход с лайнера, трансфер Пирей — Афины</td></tr>
+                <tr><td>08:30–10:00</td><td>Обзор центра: Синтагма, парламент, стадион Панатинаикос</td></tr>
+                <tr><td>10:00–12:00</td><td>Акрополь с гидом</td></tr>
+                <tr><td>12:00–14:00</td><td>Прогулка по Плаке, обед самостоятельно</td></tr>
+                <tr><td>14:00–16:00</td><td>Свободное время, возвращение в порт</td></tr>
+              </table></details></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>8</b><span>дек · вт</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/ephesus-library.jpg" alt="Библиотека Цельса в Эфесе" loading="lazy"><span class="pill flag"><i class="f-tr"></i>Турция</span></div>
+          <div class="txt">
+            <div class="place">Измир · Эфес</div>
+            <h3>Эгейский Измир и древний Эфес</h3>
+            <p>Измир — турецкий порт на берегу Эгейского моря с набережной Кордон. Рядом — древний Эфес, один из самых впечатляющих археологических памятников региона: мраморные улицы, храмы, фасад библиотеки Цельса и Большой театр.</p>
+            <div class="opt"><b>★ По желанию: древний Эфес</b>
+              <p>Для Эфеса нужно 2,5–3 часа: берите его целым днём, а Измир оставьте на прогулку по набережной.</p>
+              <details><summary>Пример программы</summary><table>
+                <tr><td>07:00–09:00</td><td>Сход с лайнера, переезд из порта в Эфес</td></tr>
+                <tr><td>09:00–11:45</td><td>Экскурсия по древнему Эфесу</td></tr>
+                <tr><td>11:45–13:45</td><td>Фотографии, возвращение в порт</td></tr>
+                <tr><td>до 15:00</td><td>Запас времени на дорогу к лайнеру</td></tr>
+              </table></details></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="day rv">
+        <div class="dd"><b>9</b><span>дек · ср</span></div>
+        <article class="card">
+          <div class="pic"><img src="images/ist-galata.jpg" alt="Галатская башня в Стамбуле" loading="lazy" style="object-position:center 35%"><span class="pill flag"><i class="f-tr"></i>Турция</span></div>
+          <div class="txt">
+            <div class="place">Стамбул · вылет домой</div>
+            <h3>Возвращение</h3>
+            <p>Возвращение в Стамбул, высадка с лайнера, трансфер из порта в отель и перелёт Стамбул — Минск. Мы рядом до самой посадки на рейс.</p>
+          </div>
+        </article>
+      </div>
+
     </div>
-    <p class="note">Маршрут и порядок портов ориентировочные: уточним у туроператора перед публикацией. Программа может меняться без сокращения объёма услуг.</p>
+    <p class="note">Маршрут и порядок портов ориентировочные: туроператор вправе вносить изменения без сокращения объёма и снижения качества услуг. Экскурсии по желанию проводятся при наборе группы; примеры программ — ориентировочные.</p>
   </div>
 </section>
 
-<!-- ================= ЛАЙНЕРЫ ================= -->
-<section id="layner" style="background: var(--paper);">
+<!-- ============ ЭМОЦИИ ============ -->
+<section class="mood" id="emocii">
   <div class="wrap">
-    <p class="eyebrow">Лайнер MSC Orchestra</p>
+    <span class="eyebrow">Ради чего всё это</span>
+    <h2>Вы привезёте не магниты, а&nbsp;впечатления</h2>
+    <p class="lead">Улочки, где хочется потеряться. Тост «за нас» над морем. Закат на палубе. И друзья, с которыми теперь есть что вспомнить.</p>
+    <div class="masonry">
+      <figure class="rv"><img src="images/p-couple-walk.jpg" alt="Пара с камерой гуляет по старому городу" loading="lazy"><figcaption>Вдвоём по старым улочкам</figcaption></figure>
+      <figure class="rv"><img src="images/p-woman-hat.jpg" alt="Девушка в шляпе радуется на площади старого города" loading="lazy"><figcaption>Улыбаться — тоже в программе</figcaption></figure>
+      <figure class="rv"><img src="images/p-toast-friends.jpg" alt="Друзья чокаются бокалами на террасе" loading="lazy"><figcaption>Тост за новые впечатления</figcaption></figure>
+      <figure class="rv"><img src="images/alber-woman.jpg" alt="Девушка среди домов-трулли в Альберобелло" loading="lazy"><figcaption>Апулия — как в сказке</figcaption></figure>
+      <figure class="rv"><img src="images/p-senior-beach.jpg" alt="Пара обнимается у моря" loading="lazy"><figcaption>Когда наконец вдвоём</figcaption></figure>
+      <figure class="rv"><img src="images/p-couple-map.jpg" alt="Пара с картой выбирает маршрут" loading="lazy"><figcaption>Куда пойдём сегодня?</figcaption></figure>
+      <figure class="rv"><img src="images/deck-sunset.jpg" alt="Гости лайнера смотрят на закат с палубы" loading="lazy"><figcaption>Закат на палубе</figcaption></figure>
+      <figure class="rv"><img src="images/p-toast-group.jpg" alt="Компания друзей за столом с бокалами" loading="lazy"><figcaption>Своей компанией</figcaption></figure>
+      <figure class="rv"><img src="images/p-senior-coast.jpg" alt="Улыбающаяся пара на берегу" loading="lazy"><figcaption>Путешествовать — никогда не поздно</figcaption></figure>
+      <figure class="rv"><img src="images/msc-couple-board.jpg" alt="Пара на борту лайнера" loading="lazy"><figcaption>Новая страна — каждое утро</figcaption></figure>
+    </div>
+    <p style="text-align:center;margin-top:34px"><a class="btn" href="#zayavka">Хочу в этот круиз</a></p>
+  </div>
+</section>
+
+<!-- ============ ЛАЙНЕР ============ -->
+<section id="layner">
+  <div class="wrap">
+    <span class="eyebrow">Лайнер</span>
     <h2>MSC Orchestra — ваш дом на неделю</h2>
-    <p class="lead">Семь ночей на борту: рестораны, шоу, бассейны и спа — всё включено</p>
-    <div class="ships">
-      <div class="offer-box">
-        <div class="ph" style="margin-bottom:14px"><img src="images/msc-orchestra.jpg" alt="Лайнер MSC Orchestra" loading="lazy"></div>
-        <h3>MSC Orchestra</h3>
-        <table class="ship-spec">
-          <tr><td>Год постройки</td><td>2007</td></tr>
-          <tr><td>Водоизмещение</td><td>89 600 т</td></tr>
-          <tr><td>Длина</td><td>294 м</td></tr>
-          <tr><td>Палуб</td><td>16</td></tr>
-          <tr><td>Каюты</td><td>1 275</td></tr>
-          <tr><td>Пассажиры</td><td>2 550</td></tr>
-        </table>
+    <p class="lead">Лайнер с русскоязычным сервисом: 16 палуб, театр, казино, бассейны, спа и рестораны на любой вкус.</p>
+    <div class="ship-top">
+      <div class="photo rv"><img src="images/ship-coast.jpg" alt="Лайнер MSC Orchestra у побережья" loading="lazy"></div>
+      <div class="specs rv">
+        <div class="spec"><b>2007</b><span>год постройки</span></div>
+        <div class="spec"><b>294 м</b><span>длина лайнера</span></div>
+        <div class="spec"><b>16</b><span>палуб, названных по музыкальным инструментам</span></div>
+        <div class="spec"><b>1 275</b><span>кают</span></div>
+        <div class="spec"><b>2 550</b><span>гостей на борту</span></div>
+        <div class="spec"><b>89 600 т</b><span>водоизмещение</span></div>
       </div>
-      <div class="ph"><img src="images/msc-deck-new.webp" alt="Палуба лайнера MSC" loading="lazy" style="height:100%;object-fit:cover"></div>
     </div>
-    <p class="fine">На борту: театр, казино, дискотека, детские площадки, спа и тренажёрный зал, бассейны, рестораны («шведский стол», à la carte), бары и лаунджи. Основной визуал круиза добавим позже.</p>
 
-    <div class="cabin-other">
-      <div class="cabin-other-text">
-        <p class="cabin-other-title">Хотите каюту классом выше?</p>
-        <p>Каюта с окном или балконом — менеджеры подберут вариант и рассчитают стоимость.</p>
-        <a class="btn" href="#zayavka">Подобрать каюту</a>
+    <div class="gallery">
+      <figure class="w rv"><img src="images/pool-3.jpg" alt="Главный бассейн и палуба лайнера" loading="lazy"><figcaption>Главный бассейн и солярий</figcaption></figure>
+      <figure class="rv"><img src="images/theatre.jpg" alt="Театр на борту" loading="lazy"><figcaption>Театр и вечерние шоу</figcaption></figure>
+      <figure class="rv"><img src="images/spa-jacuzzi.jpg" alt="Джакузи и зона отдыха в спа MSC Aurea" loading="lazy"><figcaption>Спа MSC Aurea</figcaption></figure>
+      <figure class="rv"><img src="images/rest-buffet.jpg" alt="Ресторан «шведский стол» с видом на море" loading="lazy"><figcaption>Ресторан «шведский стол»</figcaption></figure>
+      <figure class="rv"><img src="images/rest-alacarte.jpg" alt="Основной ресторан с иллюминаторами" loading="lazy"><figcaption>Основной ресторан</figcaption></figure>
+      <figure class="rv"><img src="images/bar-lounge.jpg" alt="Лаундж-бар" loading="lazy"><figcaption>Бары и лаунджи</figcaption></figure>
+      <figure class="rv"><img src="images/disco.jpg" alt="Дискотека на борту" loading="lazy"><figcaption>Дискотека и ночной клуб</figcaption></figure>
+    </div>
+
+    <div class="feat">
+      <div class="rv"><h4>Рестораны</h4><p>Основной ресторан, «шведский стол» и ресторан восточной кухни.</p></div>
+      <div class="rv"><h4>Бары и лаунджи</h4><p>Лаундж на корме, коктейль-бар, сигарная комната, открытый бар у бассейна, пиано-бар, винный бар, бар-мороженое, кофе-бар и спа-бар.</p></div>
+      <div class="rv"><h4>Развлечения</h4><p>Театр, казино, дискотека и ночной клуб, игровые площадки для детей, магазины, библиотека, фотогалерея и комната для видеоигр.</p></div>
+      <div class="rv"><h4>Спа и спорт</h4><p>MSC Aurea Spa, тренажёрный зал, спортивная площадка, мини-гольф, беговая дорожка, шаффлборд, парикмахерская и солярий.</p></div>
+      <div class="rv"><h4>Бассейны</h4><p>Главный бассейн, джакузи и приватная зона отдыха Thor на верхней палубе.</p></div>
+      <div class="rv"><h4>Сервис</h4><p>Информационный офис, круглосуточное обслуживание в каюте, прачечная и химчистка, медпункт, бизнес-центр.</p></div>
+    </div>
+
+    <div class="cabins">
+      <figure class="rv"><img src="images/cabin-int.jpg" alt="Внутренняя каюта" loading="lazy"></figure>
+      <figure class="rv"><img src="images/cabin-bal.jpg" alt="Каюта с балконом" loading="lazy"></figure>
+      <div class="cabin-info rv">
+        <h4>Каюты</h4>
+        <p>Внутренние, с окном, с балконом и сьюты. В каждой — кондиционер, ванная с душем, телевизор, сейф и мини-бар; кровать двуспальная или две односпальные.</p>
+        <p>Интернет в каюте оплачивается дополнительно. Каюту классом выше подберут менеджеры.</p>
+        <a class="btn small" href="#zayavka">Подобрать каюту</a>
       </div>
-      <figure class="ph"><img src="images/cabin-window.jpg" alt="Каюта с окном" loading="lazy"><figcaption>С окном</figcaption></figure>
-      <figure class="ph"><img src="images/cabin-balcony.jpg" alt="Каюта с балконом" loading="lazy"><figcaption>С балконом</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- ================= ВИЗА ================= -->
-<section id="viza">
+<!-- ============ ОТЕЛЬ ============ -->
+<section class="hotel" id="oteli">
   <div class="wrap">
-    <p class="eyebrow">Визовая поддержка · бесплатно для первых 10 человек</p>
-    <h2>Греческая виза — поможем и не возьмём за это</h2>
-    <p class="lead">Победитель премии «Народный выбор» по визовой поддержке</p>
-    <p class="intro">Круиз заходит в Грецию, поэтому нужна греческая виза. Для первых 10 человек, забронировавших этот круиз, визовая поддержка — бесплатно: консультация, документы, запись на подачу. Консульский сбор оплачивается отдельно.</p>
-    <div class="steps">
-      <div class="step"><i>1</i><h4>Консультация</h4><p>Проверим паспорт и составим список документов</p></div>
-      <div class="step"><i>2</i><h4>Пакет документов</h4><p>Анкета, бронь круиза, отелей и авиабилетов</p></div>
-      <div class="step"><i>3</i><h4>Запись на подачу</h4><p>Запишем в визовый центр</p></div>
-      <div class="step"><i>4</i><h4>Подача документов</h4><p>Будем на связи до решения</p></div>
+    <span class="eyebrow">Отель в Стамбуле · по системе «Фортуна»</span>
+    <h2>Отель 4–5★ с завтраком</h2>
+    <p class="lead">Ночь до круиза в Стамбуле: отдохнуть с дороги, плотно позавтракать и без спешки выйти в порт. Конкретный отель назначается по системе «Фортуна» — категория 4–5★ с завтраком сохраняется.</p>
+    <div class="hotel-grid">
+      <figure class="rv"><img src="images/h-room1.jpg" alt="Номер в стамбульском отеле в восточном стиле" loading="lazy"><figcaption>Номер — пример отеля такой категории</figcaption></figure>
+      <figure class="rv"><img src="images/h-view.jpg" alt="Панорамное окно с видом на Босфор" loading="lazy" style="object-position:center 35%"><figcaption>Вид из окна — пример</figcaption></figure>
+      <figure class="rv"><img src="images/h-breakfast.jpg" alt="Завтрак в отеле" loading="lazy"><figcaption>Завтрак включён</figcaption></figure>
+      <figure class="rv"><img src="images/h-lobby.jpg" alt="Лобби отеля" loading="lazy"><figcaption>Лобби — пример</figcaption></figure>
+      <figure class="rv"><img src="images/h-room2.jpg" alt="Современный номер" loading="lazy"><figcaption>Номер — пример</figcaption></figure>
     </div>
+    <div class="hotel-facts"><span>Категория 4–5★</span><span>Завтрак включён</span><span>Трансферы из аэропорта и в порт</span></div>
+    <p class="note">Фотографии иллюстрируют уровень отелей категории 4–5★, конкретный отель сообщим ближе к поездке.</p>
   </div>
 </section>
 
-<!-- ================= КОМАНДА ================= -->
-<section id="komanda" style="background: var(--paper);">
-  <div class="wrap">
-    <div class="team">
-      <div class="ph team-flag"><img src="images/team-flag.jpg" alt="Группа «НеобхоДима Тревел» с флагом агентства на борту лайнера MSC" loading="lazy"></div>
-      <div class="team-text">
-        <p class="eyebrow">Сопровождение нашей команды</p>
-        <h2>Поможем на каждом шаге</h2>
-        <p class="intro">Мы уже возим группы в круизы — и в этот раз тоже поедем с вами. От визы до возвращения домой вы не остаётесь один на один с билетами, трансферами и портом.</p>
-        <ul class="checks">
-          <li>Поможем с визой ещё до поездки</li>
-          <li>Подскажем по экскурсиям и каютам</li>
-          <li>Ответим на любые вопросы до и во время поездки</li>
-        </ul>
-        
+<!-- ============ КОМАНДА ============ -->
+<section id="komanda">
+  <div class="wrap team">
+    <div class="photo rv"><img src="images/team-flag.jpg" alt="Группа «НеобхоДима Тревел» с флагом агентства на борту лайнера MSC" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">Мы рядом</span>
+      <h2>Поедем вместе с вами</h2>
+      <p class="lead" style="font-size:18px">Мы уже возим группы в круизы — и в этот раз тоже будем рядом: от визы до возвращения домой.</p>
+      <div class="guides">
+        <div class="guide"><img src="images/guide-dmitry.jpg" alt="Дмитрий Шевченко" loading="lazy"><div><h3>Дмитрий Шевченко</h3><small>Директор «НеобхоДима Тревел»</small><p>Посетил более 30 стран и с радостью поделится личными рекомендациями.</p></div></div>
+        <div class="guide"><img src="images/guide-tatyana.jpg" alt="Татьяна Алехнович" loading="lazy"><div><h3>Татьяна Алехнович</h3><small>Заместитель директора по развитию</small><p>В поездке — тот человек, к которому можно обратиться с любым вопросом.</p></div></div>
       </div>
     </div>
-    <p class="subhead">С вами поедут</p>
-    <div class="guides">
-      <article class="guide">
-        <div class="ph"><img src="images/guide-dmitry.jpg" alt="Дмитрий Шевченко" loading="lazy"></div>
-        <div>
-          <h3>Дмитрий Шевченко</h3>
-          <p class="guide-role">Директор «НеобхоДима Тревел»</p>
-          <p>Основатель компании. Тот, кто превращает «хочу в путешествие» в «вот билеты, вот виза, вот маршрут». Посетил более 30 стран и с радостью поделится личными рекомендациями.</p>
-        </div>
-      </article>
-      <article class="guide">
-        <div class="ph"><img src="images/guide-tatyana.jpg" alt="Татьяна Алехнович" loading="lazy"></div>
-        <div>
-          <h3>Татьяна Алехнович</h3>
-          <p class="guide-role">Заместитель директора по развитию</p>
-          <p>Координирует все процессы, связанные с организацией путешествий. В поездке — тот человек, к которому можно обратиться с любым вопросом.</p>
-        </div>
-      </article>
-    </div>
-
   </div>
 </section>
 
-<!-- ================= ВОПРОСЫ ================= -->
-<section id="voprosy">
+<!-- ============ ВОПРОСЫ ============ -->
+<section id="voprosy" style="background:var(--foam)">
   <div class="wrap">
-    <p class="eyebrow">Частые вопросы</p>
+    <span class="eyebrow">Частые вопросы</span>
     <h2>Отвечаем заранее</h2>
     <div class="faq">
-      <details><summary>Что входит в стоимость?</summary><p>Перелёт Минск — Стамбул — Минск, трансферы (аэропорт — отель, отель — порт, порт — отель), отель 4–5★ с завтраком, круиз 8 дней / 7 ночей «всё включено», сборы и чаевые. <a href="#stoimost">Подробнее</a>.</p></details>
-      <details><summary>Что не входит?</summary><p>Только туристическая услуга — 350 BYN. Скрытых доплат на борту нет: чаевые и сборы уже в цене.</p></details>
-      <details><summary>Почему цена «от 1 290 €»?</summary><p>Это стартовая цена. По мере заполнения групп она растёт — выгоднее бронировать раньше.</p></details>
-      <details><summary>Какой будет отель в Стамбуле?</summary><p>Отель 4–5★ с завтраком по системе «Фортуна»: заселим в один из отелей этой категории, какой именно — сообщим ближе к поездке.</p></details>
-      <details><summary>Нужна ли виза?</summary><p>Да, греческая. Для первых 10 человек визовая поддержка — бесплатно. <a href="#viza">Подробнее</a>.</p></details>
-      <details><summary>Какой лайнер?</summary><p>MSC Orchestra: построен в 2007 году, 16 палуб, 1 275 кают, до 2 550 пассажиров.</p></details>
+      <details><summary>Что входит в стоимость?</summary><p>Перелёт Минск — Стамбул — Минск, трансферы (аэропорт — отель, отель — порт, порт — отель), отель 4–5★ с завтраком, круиз 8 дней / 7 ночей на MSC Orchestra «всё включено», портовые сборы и чаевые. Не включена туристическая услуга — 350&nbsp;BYN.</p></details>
+      <details><summary>Почему цена «от 1 290 €»?</summary><p>Это стартовая цена за человека при двухместном размещении. Она растёт по мере заполнения группы, поэтому выгоднее бронировать заранее.</p></details>
+      <details><summary>Какой будет отель?</summary><p>Отель 4–5★ в Стамбуле с завтраком по системе «Фортуна»: заселим в один из отелей этой категории, какой именно — сообщим ближе к поездке.</p></details>
+      <details><summary>Какая нужна виза?</summary><p>Греческая. Для первых 10 человек визовая поддержка бесплатная: поможем с документами, анкетой и записью в визовый центр. Консульский сбор оплачивается отдельно.</p></details>
+      <details><summary>Экскурсии обязательны?</summary><p>Нет. Все экскурсии — по желанию, их можно заказать заранее у менеджера или погулять по портовым городам самостоятельно.</p></details>
+      <details><summary>Чаевые на лайнере нужно оплачивать?</summary><p>Нет, чаевые и сборы уже включены в стоимость — скрытых доплат на борту нет.</p></details>
+      <details><summary>Можно взять каюту лучше?</summary><p>Да, подберём каюту с окном, балконом или сьют — менеджер рассчитает разницу в стоимости.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ================= ЗАЯВКА ================= -->
-<section id="zayavka" style="background: var(--paper);">
-  <div class="wrap lead-grid">
-    <div class="lead-text">
-      <p class="eyebrow">Заявка на круиз</p>
+<!-- ============ ЗАЯВКА ============ -->
+<section class="final" id="zayavka">
+  <div class="wrap final-grid">
+    <div class="contact">
+      <span class="eyebrow">Заявка на круиз</span>
       <h2>Забронируйте место в группе</h2>
-      <p>Оставьте телефон — менеджер перезвонит, ответит на вопросы, подберёт каюту и поможет с визой.</p>
-      <div class="contact-line">
-        <small>Телефон, Telegram, Viber</small>
-        <a href="tel:+375447884422">+375 (44) 788-44-22</a>
-      </div>
-      <div class="messengers">
-        <a class="msg-btn" href="https://t.me/+375447884422" target="_blank" rel="noopener">Написать в Telegram</a>
-        <a class="msg-btn" href="viber://chat?number=%2B375447884422">Написать в Viber</a>
-      </div>
-      <div class="contact-line">
-        <small>E-mail</small>
-        <a href="mailto:ndtravel365@gmail.com">ndtravel365@gmail.com</a>
+      <p class="lead" style="color:rgba(255,255,255,.8)">Оставьте телефон — менеджер перезвонит, расскажет о каютах и экскурсиях и поможет с греческой визой.</p>
+      <small>Телефон, Telegram, Viber</small>
+      <a href="tel:+375447884422"><b>+375 (44) 788-44-22</b></a>
+      <div class="msgs">
+        <a href="https://t.me/+375447884422" target="_blank" rel="noopener">Telegram</a>
+        <a href="viber://chat?number=%2B375447884422">Viber</a>
+        <a href="mailto:ndtravel365@gmail.com">E-mail</a>
       </div>
     </div>
 
     <form class="form" id="leadForm" novalidate>
-      <div class="field">
-        <label for="f-name">Ваше имя</label>
-        <input id="f-name" name="name" type="text" autocomplete="name" required>
-      </div>
-      <div class="field">
-        <label for="f-phone">Телефон</label>
-        <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" required>
-      </div>
-      <div class="field">
-        <label>Как удобнее связаться</label>
+      <h3>Оставить заявку</h3>
+      <div class="field"><label for="f-name">Ваше имя</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" required></div>
+      <div class="field"><label>Как удобнее связаться</label>
         <div class="radios">
           <label><input type="radio" name="channel" value="Звонок" checked> Звонок</label>
           <label><input type="radio" name="channel" value="Telegram"> Telegram</label>
           <label><input type="radio" name="channel" value="Viber"> Viber</label>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-comment">Комментарий <span style="font-weight:400;color:var(--muted)">— необязательно</span></label>
-        <textarea id="f-comment" name="comment" placeholder="Сколько человек, нужна ли виза, пожелания по каюте"></textarea>
-      </div>
+        </div></div>
+      <div class="field"><label for="f-comment">Комментарий <span style="font-weight:400;color:var(--muted)">— необязательно</span></label><textarea id="f-comment" name="comment" placeholder="Сколько человек, нужна ли виза, пожелания по каюте"></textarea></div>
       <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button class="btn" type="submit">Отправить заявку</button>
-      <p class="agree">Данные из заявки мы используем только для связи с вами по туру. Подробнее — в <a href="https://travel365.by/turistam/politika-konfidentsialnosti/" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p>
+      <p class="agree">Данные из заявки используем только для связи с вами по туру. Подробнее — в <a href="https://travel365.by/turistam/politika-konfidentsialnosti/" target="_blank" rel="noopener">политике обработки персональных данных</a>.</p>
       <div class="form-msg" id="formMsg" role="status"></div>
     </form>
   </div>
@@ -360,51 +476,20 @@
 
 </main>
 
-<!-- ================= ПОДВАЛ ================= -->
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <h3>НеобхоДима Тревел</h3>
-        <p>Туристическая компания из Минска. Групповые и индивидуальные путешествия, морские круизы и туры по Европе, визовая поддержка и сопровождение в поездках.</p>
-        <small>Офис</small>
-        Минск, ул. Притыцкого, 29, офис 606 (БЦ «Тивали», 6 этаж), ст. м. «Спортивная».<br>
-        Пн–пт 10:00–19:00, сб 10:00–15:00, вс — выходной.
-      </div>
-      <div>
-        <small>Телефон, Telegram, Viber</small>
-        <a href="tel:+375447884422">+375 (44) 788-44-22</a>
-        <small>E-mail</small>
-        <a href="mailto:ndtravel365@gmail.com">ndtravel365@gmail.com</a>
-      </div>
-      <div>
-        <small>Сайт</small>
-        <a href="https://travel365.by" target="_blank" rel="noopener">travel365.by</a>
-        <small>Instagram</small>
-        <a href="https://instagram.com/neobhodima_travel" target="_blank" rel="noopener">@neobhodima_travel</a>
-      </div>
+    <div class="cols">
+      <div><h3>НеобхоДима Тревел</h3><p>Туристическая компания из Минска. Групповые и индивидуальные путешествия, морские круизы и туры по Европе, визовая поддержка и сопровождение в поездках.</p>
+        Минск, ул. Притыцкого, 29, офис 606 (БЦ «Тивали», 6 этаж), ст. м. «Спортивная».<br>Пн–пт 10:00–19:00, сб 10:00–15:00, вс — выходной.</div>
+      <div><h3>Связь</h3><a href="tel:+375447884422">+375 (44) 788-44-22</a><br><a href="mailto:ndtravel365@gmail.com">ndtravel365@gmail.com</a></div>
+      <div><h3>Мы в сети</h3><a href="https://travel365.by" target="_blank" rel="noopener">travel365.by</a><br><a href="https://instagram.com/neobhodima_travel" target="_blank" rel="noopener">@neobhodima_travel</a></div>
     </div>
-    <div class="legal">ООО «НеобхоДима Тревел» · УНП 193772332 · Цена указана за одного человека при двухместном размещении. Программа тура ориентировочная: туроператор вправе вносить в неё изменения без сокращения объёма и снижения качества услуг.</div>
-    <div class="legal-links"><a href="https://travel365.by/turistam/politika-konfidentsialnosti/" target="_blank" rel="noopener">Политика обработки персональных данных</a><a href="#" data-cookie-settings>Настройки cookie</a></div>
+    <div class="legal">ООО «НеобхоДима Тревел» · УНП 193772332 · Цена указана за одного человека при двухместном размещении. Программа тура ориентировочная: туроператор вправе вносить в неё изменения без сокращения объёма и снижения качества услуг. Фотографии иллюстративные.</div>
+    <div class="links"><a href="https://travel365.by/turistam/politika-konfidentsialnosti/" target="_blank" rel="noopener">Политика обработки персональных данных</a><a href="#" data-cookie-settings>Настройки cookie</a></div>
   </div>
 </footer>
 
-<details class="fab">
-  <summary aria-label="Связаться с нами">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.9A8 8 0 1 1 21 12Z"/></svg>
-  </summary>
-  <div class="fab-panel">
-    <b>Есть вопрос о круизе?</b>
-    <a href="https://t.me/+375447884422" target="_blank" rel="noopener">Написать в Telegram</a>
-    <a href="viber://chat?number=%2B375447884422">Написать в Viber</a>
-    <a href="tel:+375447884422">Позвонить: +375 (44) 788-44-22</a>
-  </div>
-</details>
-
-<div class="mobile-cta">
-  <a href="tel:+375447884422">Позвонить</a>
-  <a href="#zayavka">Оставить заявку</a>
-</div>
+<div class="mcta"><a href="tel:+375447884422">Позвонить</a><a href="#zayavka">Оставить заявку</a></div>
 
 <script>
   // Адрес веб-приложения Google Apps Script — пока тот же, что у «Возвращения в лето».
@@ -413,44 +498,31 @@
   var TOUR_NAME = "Восточное Средиземноморье";
 
   (function () {
+    var top = document.getElementById('top');
+    function onScroll() { top.classList.toggle('solid', window.scrollY > 40); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    var els = document.querySelectorAll('.rv');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (en) {
+        en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else { els.forEach(function (el) { el.classList.add('in'); }); }
+
     var form = document.getElementById('leadForm');
     var msg = document.getElementById('formMsg');
-
-    var strip = document.getElementById('strip');
-    document.querySelectorAll('[data-strip]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        strip.scrollBy({ left: Number(b.getAttribute('data-strip')) * strip.clientWidth * 0.8, behavior: 'smooth' });
-      });
-    });
-
-    var toggle = document.getElementById('daysToggle');
-    var days = document.querySelectorAll('.days details');
-    toggle.addEventListener('click', function () {
-      var open = toggle.getAttribute('data-open') !== '1';
-      days.forEach(function (d) { d.open = open; });
-      toggle.setAttribute('data-open', open ? '1' : '0');
-      toggle.textContent = open ? 'Свернуть все дни' : 'Развернуть все дни';
-    });
-    if (window.matchMedia("(min-width: 681px)").matches) {
-      days.forEach(function (d) { d.open = true; });
-    }
-
-    function show(type, html) {
-      msg.className = 'form-msg ' + type;
-      msg.innerHTML = html;
-    }
+    function show(type, html) { msg.className = 'form-msg ' + type; msg.innerHTML = html; }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (form.website.value) return; // бот
-
+      if (form.website.value) return;
       var name = form.name.value.trim();
       var phone = form.phone.value.trim();
       if (!name || phone.replace(/\D/g, '').length < 7) {
         show('err', 'Пожалуйста, укажите имя и телефон — иначе менеджер не сможет с вами связаться.');
         return;
       }
-
       var data = new URLSearchParams();
       data.append('name', name);
       data.append('phone', phone);
@@ -464,9 +536,7 @@
       data.append('page', landing + (cid ? ' · ClientID: ' + cid : ''));
 
       var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Отправляем…';
-
+      btn.disabled = true; btn.textContent = 'Отправляем…';
       fetch(LEAD_ENDPOINT, { method: 'POST', mode: 'no-cors', body: data })
         .then(function () {
           form.reset();
@@ -476,26 +546,17 @@
         .catch(function () {
           show('err', 'Не получилось отправить заявку. Позвоните нам: <a href="tel:+375447884422"><b>+375 (44) 788-44-22</b></a>.');
         })
-        .then(function () {
-          btn.disabled = false;
-          btn.textContent = 'Отправить заявку';
-        });
+        .then(function () { btn.disabled = false; btn.textContent = 'Отправить заявку'; });
     });
-  })();
-</script>
-<script>
-  // Цели Метрики
-  (function () {
-    var ID = 113061341;
-    function goal(name) { if (typeof ym === "function") ym(ID, "reachGoal", name); }
-    document.addEventListener("click", function (e) {
-      var el = e.target.closest && e.target.closest("a[href], [data-plan]");
-      if (!el) return;
-      if (el.hasAttribute("data-plan")) { goal("format_choose"); return; }
-      var h = el.getAttribute("href");
-      if (h.indexOf("tel:") === 0) goal("phone_click");
-      else if (h.indexOf("t.me/") > -1) goal("telegram_click");
-      else if (h.indexOf("viber:") === 0) goal("viber_click");
+
+    // Цели Метрики
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('a[href]');
+      if (!el || typeof ym !== 'function') return;
+      var h = el.getAttribute('href');
+      if (h.indexOf('tel:') === 0) ym(113061341, 'reachGoal', 'phone_click');
+      else if (h.indexOf('t.me/') > -1) ym(113061341, 'reachGoal', 'telegram_click');
+      else if (h.indexOf('viber:') === 0) ym(113061341, 'reachGoal', 'viber_click');
     });
   })();
 </script>
