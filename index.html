@@ -904,6 +904,7 @@
         .then(function () {
           form.reset();
           if (typeof ym === 'function') ym(113061341, 'reachGoal', 'zayavka');
+          if (typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'AW-18522565576/6ChuCMzjkKMdEMjXn4BF' });
           show('ok', '<b>Спасибо, заявка отправлена!</b> Менеджер свяжется с вами в рабочее время: пн–пт 10:00–19:00, сб 10:00–15:00.');
         })
         .catch(function () {
@@ -912,14 +913,17 @@
         .then(function () { btn.disabled = false; btn.textContent = 'Отправить заявку'; });
     });
 
-    // Цели Метрики
+    // Цели Метрики и конверсия «Контакт» в Google Рекламе
     document.addEventListener('click', function (e) {
       var el = e.target.closest && e.target.closest('a[href]');
-      if (!el || typeof ym !== 'function') return;
+      if (!el) return;
       var h = el.getAttribute('href');
-      if (h.indexOf('tel:') === 0) ym(113061341, 'reachGoal', 'phone_click');
-      else if (h.indexOf('t.me/') > -1) ym(113061341, 'reachGoal', 'telegram_click');
-      else if (h.indexOf('viber:') === 0) ym(113061341, 'reachGoal', 'viber_click');
+      var goal = h.indexOf('tel:') === 0 ? 'phone_click'
+        : h.indexOf('t.me/') > -1 ? 'telegram_click'
+        : h.indexOf('viber:') === 0 ? 'viber_click' : '';
+      if (!goal) return;
+      if (typeof ym === 'function') ym(113061341, 'reachGoal', goal);
+      if (typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'AW-18522565576/TRpVCLumkaMdEMjXn4BF' });
     });
   })();
 </script>

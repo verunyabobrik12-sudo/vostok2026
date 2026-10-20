@@ -24,7 +24,7 @@
   // Страница входа с рекламы (UTM-метки) — запоминаем на время визита, только с согласия на аналитику
   function rememberLanding() {
     try {
-      if (/[?&](utm_|yclid=)/.test(location.search) && !sessionStorage.getItem("leto_landing")) {
+      if (/[?&](utm_|yclid=|gclid=|fbclid=)/.test(location.search) && !sessionStorage.getItem("leto_landing")) {
         sessionStorage.setItem("leto_landing", location.href);
       }
     } catch (e) {}
@@ -41,11 +41,30 @@
     ym(COUNTER, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: 'dataLayer', referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
   }
 
+  // Тег Google Рекламы: считает заявки и клики по контактам с рекламы. Тоже только после согласия
+  var ADS_ID = 'AW-18522565576';
+  function loadGoogleAds() {
+    if (window.gtag) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ADS_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ADS_ID);
+  }
+
+  function loadAnalytics() {
+    loadMetrika();
+    loadGoogleAds();
+  }
+
   // Удалить cookie Метрики, если согласие отозвано
   function dropMetrikaCookies() {
     document.cookie.split(';').forEach(function (c) {
       var name = c.split('=')[0].trim();
-      if (name.indexOf('_ym') === 0) {
+      if (name.indexOf('_ym') === 0 || name.indexOf('_gcl') === 0) {
         var host = location.hostname;
         document.cookie = name + '=; Max-Age=0; path=/';
         document.cookie = name + '=; Max-Age=0; path=/; domain=' + host;
@@ -55,7 +74,7 @@
   }
 
   var choice = readChoice();
-  if (choice && choice.analytics) loadMetrika();
+  if (choice && choice.analytics) loadAnalytics();
 
   function build() {
     var box = document.createElement('div');
@@ -64,10 +83,10 @@
     box.setAttribute('aria-label', 'Настройки cookie');
     box.innerHTML =
       '<p class="cookie-text">Мы используем cookie, чтобы сайт работал корректно, и — с вашего согласия — ' +
-      'Яндекс Метрику, чтобы понимать, какие разделы полезны. <a href="https://leto.travel365.by/politika-cookie.html" target="_blank" rel="noopener">Подробнее</a></p>' +
+      'Яндекс Метрику и Google Рекламу, чтобы понимать, какие разделы и объявления полезны. <a href="https://leto.travel365.by/politika-cookie.html" target="_blank" rel="noopener">Подробнее</a></p>' +
       '<div class="cookie-settings" hidden>' +
       '  <label class="cookie-opt"><input type="checkbox" checked disabled> <span><b>Технические</b> — нужны для работы сайта, отключить нельзя</span></label>' +
-      '  <label class="cookie-opt"><input type="checkbox" id="cookie-analytics"> <span><b>Аналитические</b> — Яндекс Метрика: статистика посещений</span></label>' +
+      '  <label class="cookie-opt"><input type="checkbox" id="cookie-analytics"> <span><b>Аналитические</b> — Яндекс Метрика и Google Реклама: статистика посещений и заявок с рекламы</span></label>' +
       '</div>' +
       '<div class="cookie-actions">' +
       '  <button type="button" class="btn cookie-accept">Принять</button>' +
@@ -86,7 +105,7 @@
       var before = readChoice();
       saveChoice(analytics);
       box.hidden = true;
-      if (analytics && !(before && before.analytics)) loadMetrika();
+      if (analytics && !(before && before.analytics)) loadAnalytics();
       if (!analytics && before && before.analytics) { dropMetrikaCookies(); try { sessionStorage.removeItem("leto_landing"); } catch (e) {} location.reload(); }
     }
 
